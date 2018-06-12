@@ -10,30 +10,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="_css/estilo.css" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
     <!-- Barra de Menu e Head-->
     <div class="w3-top">
-      <div class="w3-bar w3-light-blue">
-          <a href="#home" class="w3-bar-item w3-button w3-hover-blue"><img class="w3-image" 
-          src="_imagens/logo.png" style="max-width:60%; height="auto""></a>
-          <a href="#home" class="w3-bar-item w3-button w3-hover-blue"> <h1 style= "color:white">Hi-Car</h1></a>
-        <div class="w3-top w3-text-white" id="icones">
-            <div class="w3-dropdown-hover w3-right w3-light-blue">
-              <i class="material-icons w3-xxlarge  w3-padding-large w3-margin-top w3-text-white">person</i> 
-              <div class="w3-dropdown-content w3-bar-block w3-border">
-                <a href="#" class="w3-bar-item w3-button w3-hover-blue">Perfil</a>
-                <a href="#" class="w3-bar-item w3-button w3-hover-blue">Sair</a>
-              </div> 
-            </div>
-        <div class="w3-dropdown-hover w3-right w3-light-blue">
-          <i class="material-icons w3-xxlarge w3-right w3-padding-large w3-margin-top w3-text-white">directions_car</i>
-            <div class="w3-dropdown-content">
-              <a href="#" class="w3-bar-item w3-button w3-hover-blue">Meus Automóveis</a>
-            </div> 
+        <div class="w3-bar w3-light-blue" id="myNavbar">
+          <a href="index.html"><img class="w3-image w3-bar-item" 
+          src="_imagens/logo.png" style="width:10%"></a>
+          <span class="w3-bar-item w3-text-white w3-xxlarge">Hi-Car</span>
+  
+          <div class="w3-dropdown-hover w3-right w3-light-blue">
+                <i class="material-icons w3-xxlarge w3-padding-large w3-margin-top w3-text-white">person</i> 
+                <div class="w3-dropdown-content w3-bar-block w3-border">
+                  <a href="#" class="w3-bar-item w3-button w3-hover-blue">Perfil</a>
+                  <a href="index.html" class="w3-bar-item w3-button w3-hover-blue">Sair</a>
+                </div> 
+          </div>
+  
+          <i class="w3-light-blue w3-right material-icons w3-xxlarge w3-padding-large w3-margin-top w3-text-white w3-right">notifications</i>
+          
+          <button class="w3-btn w3-blue w3-round-large w3-right w3-margin-top" style="max-width:10%">Meus Veículos<i class="w3-right material-icons">
+          ic_directions_car</i></button>
         </div>
-        <i class="material-icons w3-xxlarge w3-right w3-padding-large w3-margin-top">ic_notifications</i>
-     </div>
-    </div>
-    </div>
+      </div>
   </head>
   <!--Corpo da Pagina - Formulario de Agendamento -->
   <body>
@@ -66,11 +64,11 @@
               <div class="w3-section w3-right">
                 <form class="w3-container w3-card-4" action="/action_page.php">
                     Selecione a Hora:
-                  <input type="time" name="horario-agendamento">
+                  <input type="time" name="horario-agendamento" min="08:00" max="16:00">
               </div><br/><br/>
               <div class="w3-section w3-right">
-                <button class="w3-right w3-button w3-margin-bottom w3-blue w3-hover-light-blue w3-round-xlarge" type="submit">Confirmar Agendamento</button>
-                <a href="index.html" type="button" class="w3-right w3-button w3-text-red w3-hover-red w3-round-xlarge w3-margin-right">Cancelar</a><br>
+                <button class="w3-right w3-button w3-margin-bottom w3-blue w3-hover-light-blue w3-round-large" type="submit">Confirmar Agendamento</button>
+                <a href="user.html" type="button" class="w3-right w3-button w3-text-red w3-hover-red w3-round-large w3-margin-right">Cancelar</a><br>
               </div>  
           </form>
         </div>

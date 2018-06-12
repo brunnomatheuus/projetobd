@@ -17,7 +17,7 @@ p {
 
 .fundo1 {
 	background-image: url("../_imagens/fundo1");
-    min-height: 90%;
+    min-height: 80%;
     max-width: 100%;
     background-attachment: fixed;
     background-position: center;
